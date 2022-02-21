@@ -1,35 +1,73 @@
 * {
     box-sizing: border-box;
 } 
-html, body {
+html,body {
     height: 100vh;
     display: flex;
     flex-flow: column wrap;
-    overflow-x: auto;
+    overflow-x: hidden;
     align-items: center;
     justify-content: center;
+    background: pink;
 }
 section {
-    width: 500px;
-    border: 2px solid pink;
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    align-items: center;
+    font-size: 20px;
     text-align: center;
 }
-
+img {
+    border: 3px solid hotpink;
+    border-radius: 50%;
+    max-width: 30%;
+    height: auto;
+}
+ul.links {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+ul.socials {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0;
+}
 li {
     list-style: none;
-    height: 16px;
-    border: 1px solid hotpink;
-    border-radius: 25%;
-    width: max-content;
-    padding: 2px;
-    margin: 3px;
+    height: 50px;
+    width: 75%;
+    border: 3px solid hotpink;
+    border-radius: 5%;
+    background: linear-gradient(to right, pink, purple);
+    margin: 10px;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 2px 2px 5px gray;
 }
-a {
+.socials li {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+.main ul li > a {
     text-decoration: none;
+    color: white;
+}
+h1 {
+    margin: 0;
+    font-size: 5vh;
 }
 
 
-
-@media screen and (max-width: 420px) {
+@media screen and (min-width: 600px) {
+    section {
+        width: 500px;
+    }
 
 }
